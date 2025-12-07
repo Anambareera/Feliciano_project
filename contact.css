@@ -1,0 +1,83 @@
+.half-page {
+      height: 70vh;
+      background-image: url('bg_3\ \(2\).jpg'); /* Replace with your actual background image */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #fff;
+    }
+   
+.half-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+/* Raise topbar, navbar, and text above the overlay */
+.topbar,
+.navbar,
+.about-text {
+  position: relative;
+  z-index: 2;
+}
+
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+    .btn-custom {
+      background-color: #f5b49e;
+      border: none;
+      color: #000;
+    }
+    .about-text {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .topbar {
+     background-color:rgba(134, 129, 129, 0.4);
+     z-index: 1050;
+    }
+
+    .breadcrumb-link {
+     margin-top: 0.5rem;
+     font-size: 1rem;
+    }
+
+    .breadcrumb-home {
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: 500;
+     transition: color 0.3s ease;
+    }
+
+   .breadcrumb-home:hover {
+     color: #e88a00;
+     text-decoration: underline;
+    }
+
+    .contact-form-map {
+  background-color: #ffffff;
+}
+
+.contact-form-map h3 {
+  font-weight: bold;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-value {
+  color: #777;
+}
